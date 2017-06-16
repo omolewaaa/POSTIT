@@ -19,23 +19,28 @@ SERVER FOLDER:This folder house the backend implementation of the project with N
    
    •	An API route that allow users create broadcast groups
    
-   •	An API route that allow users add other users to groups
    
-   •	An API route that allows a logged in user post messages to created groups
+   GETTING STARTED
    
-  •	An API route that allows a logged in user retrieve messages that have been posted to groups he/she belongs to
+   Clone this repository using the command git clone https://github.com/omolewaaa/POSTIT  then you have a copy of this project on your      local machine
 
 
 PEREQUISITES AND INSTALLATIONS
 
-  •	The knowledge of HTML, CSS and JavaScript 
+  • Knowledge of HTML, CSS and JavaScript 
   
   •	NodeJS installed on your system, you can check out here to download https://nodejs.org/en/download/
   
   •	Setup the backend with NodeJs – Express
   
-   •	PostgreSQL for relational data persistence and Sequelize as the Object relational model.
+  •	PostgreSQL for relational data persistence and Sequelize as the Object relational model.
    
   •	Installation of Postman for testing the API routes
+  
+  TESTING
+  
+  . Test the API route on postman if the user can register successfully using "api/users/signup" by filling the details of the user in      the body(username, email and password).
+  
+  .Test if the user can create groups using "api/group" by filling the details of the groupname and username in the body as details
 
 
