@@ -3,7 +3,6 @@ POSTIT
   This is a simple application that allows friends and colleagues create groups for notifications. This way one person can post notifications to everyone by sending a message once. The application allows people create accounts, create groups and add registered users to the groups, and then send messages out to these groups whenever they want.
 
 Template folder:
-
 This contains the user interfaces:
 •	A page for users to register and login
 •	A webpage page that allows registered users to create broadcast groups and add other registered users to created groups.
@@ -12,7 +11,6 @@ This contains the user interfaces:
 These pages are designed using HTML and CSS 
 
 Server folder:
-
 This folder house the backend implementation of the project with NodeJS - Express
 •	API routes for users to create accounts and login to the application
 •	An API route that allow users create broadcast groups
@@ -23,10 +21,14 @@ This folder house the backend implementation of the project with NodeJS - Expres
 
 Prerequisites and Installations
 
-•	The knowledge of HTML, CSS and JavaScript 
-•	NodeJS installed on your system, you can check out here to do that because you will be using it for the project
-•	Setup the backend with NodeJs – Express
-•	PostgreSQL for relational data persistence and Sequelize as the Object relational model.
-•	Installation of Postman for testing the API routes
+  •	The knowledge of HTML, CSS and JavaScript 
+  
+  •	NodeJS installed on your system, you can check out here to download https://nodejs.org/en/download/
+  
+  •	Setup the backend with NodeJs – Express
+  
+   •	PostgreSQL for relational data persistence and Sequelize as the Object relational model.
+   
+  •	Installation of Postman for testing the API routes
 
 
