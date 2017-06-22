@@ -19,31 +19,38 @@ PEREQUISITES AND INSTALLATIONS
  
   3.	PostgreSQL for relational data persistence and Sequelize as the Object relational model.
    
-  4	Installation of Postman for testing the API routes
+  4  	Installation of Postman for testing the API routes
   
   
   TESTING
   
   1.  To signup
-        POST: api/users/signup  
-          details (username, email and password).
+        POST: api/users/signup
+        
+         details (username, email and password).
        
   2.  To sigin
         POST: api/users/signin
-          details (useername and password)
+        
+        details (useername and password)
   
   3.  To create a group 
+  
         POST : api/group 
-          details (groupname) 
+        
+         details (groupname) 
       
   4. To add Memember
        POST: api/group/<group id>/user
       
   5. To post message to a group
+  
        POST: api/group/<group id>/message
+       
        details (message)
       
   6. To Retrieve messages from a specified group
+  
        GET: api/group/<group id/message
 
 
