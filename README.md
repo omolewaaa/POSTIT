@@ -3,9 +3,9 @@
   
   This is a simple application that allows friends and colleagues create groups for notifications, This way one person can post notifications to everyone by sending a message once. The application allows people create accounts, create groups and add registered users to the groups, and then send messages out to these groups whenever they want.
 
-Template:This contains the user interfaces using HTML and CSS 
+**Template:** This contains the user interfaces using HTML and CSS 
 
-Server:This folder house the backend implementation of the project with NodeJS - Express
+**Server:** This folder house the backend implementation of the project with NodeJS - Express
 
 **GETTING STARTED**
    
@@ -26,11 +26,13 @@ Server:This folder house the backend implementation of the project with NodeJS -
   **TESTING**
   
   1.  **To signup**
+  
         POST: api/users/signup
         
          details (username, email and password).
        
   2.  **To sigin**
+  
         POST: api/users/signin
         
         details (useername and password)
@@ -42,6 +44,7 @@ Server:This folder house the backend implementation of the project with NodeJS -
          details (groupname) 
       
   4. **To add Memember**
+  
        POST: api/group/<group id>/user
       
   5. **To post message to a group**
