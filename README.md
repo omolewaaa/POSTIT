@@ -7,13 +7,9 @@ TEMPLATE FOLDER:
 This contains the user interfaces using HTML and CSS 
 
 SERVER FOLDER:
+This folder house the backend implementation of the project with NodeJS - Express
 
-       This folder house the backend implementation of the project with NodeJS - Express
-
-  
-   
-   
-   GETTING STARTED
+  GETTING STARTED
    
    Clone this repository using the command git clone https://github.com/omolewaaa/POSTIT  then you have a copy of this project on your      local machine
 
@@ -32,15 +28,25 @@ PEREQUISITES AND INSTALLATIONS
   TESTING
   
   1.  To signup
-      "api/users/signup"  
+      POST: api/users/signup  
        details (username, email and password).
        
   2.  To sigin
-      "api/users/signin"
+      POST: api/users/signin
        details (useername and password)
   
   3.  To create a group 
-      "api/group" 
+      POST : api/group 
       details (groupname) 
+      
+  4. To add Memember
+      POST: api/group/<group id>/user
+      
+  5. To post message to a group
+      POST: api/group/<group id>/message
+      details (message)
+      
+  6. To Retrieve messages from a specified group
+      GET: api/group/<group id/message
 
 
