@@ -2,22 +2,15 @@ POSTIT
 
   This is a simple application that allows friends and colleagues create groups for notifications, This way one person can post notifications to everyone by sending a message once. The application allows people create accounts, create groups and add registered users to the groups, and then send messages out to these groups whenever they want.
 
-TEMPLATE FOLDER:This contains the user interfaces:
+TEMPLATE FOLDER:
 
-  •	A page for users to register and login
-  
-  •	A webpage page that allows registered users to create broadcast groups and add other registered users to created groups.
-  
-  •	A page that allows registered users post messages to all users in a particular group.
-  
-  •	A “Message Board” page that allows registered users see messages that have been posted to groups they belong to.
-  These pages are designed using HTML and CSS 
+This contains the user interfaces using HTML and CSS 
 
-SERVER FOLDER:This folder house the backend implementation of the project with NodeJS - Express
+SERVER FOLDER:
 
-   •	API routes for users to create accounts and login to the application
-   
-   •	An API route that allow users create broadcast groups
+       This folder house the backend implementation of the project with NodeJS - Express
+
+  
    
    
    GETTING STARTED
@@ -30,17 +23,24 @@ PEREQUISITES AND INSTALLATIONS
   • Knowledge of HTML, CSS and JavaScript 
   
   •	NodeJS installed on your system, you can check out here to download https://nodejs.org/en/download/
-  
-  •	Setup the backend with NodeJs – Express
-  
+ 
   •	PostgreSQL for relational data persistence and Sequelize as the Object relational model.
    
   •	Installation of Postman for testing the API routes
   
+  
   TESTING
   
-  . Test the API route on postman if the user can register successfully using "api/users/signup" by filling the details of the user in      the body(username, email and password).
+  1.  To signup
+      "api/users/signup"  
+       details (username, email and password).
+       
+  2.  To sigin
+      "api/users/signin"
+       details (useername and password)
   
-  .Test if the user can create groups using "api/group" by filling the details of the groupname and username in the body as details
+  3.  To create a group 
+      "api/group" 
+      details (groupname) 
 
 
