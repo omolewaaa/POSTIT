@@ -7,6 +7,7 @@
 
 **Server:** This folder house the backend implementation of the project with NodeJS - Express
 
+
 **GETTING STARTED**
    
    Clone this repository using the command git clone https://github.com/omolewaaa/POSTIT 
@@ -20,7 +21,7 @@
  
   3.	PostgreSQL for relational data persistence and Sequelize as the Object relational model.
    
-  4  	Installation of Postman for testing the API routes
+   4  	Installation of Postman for testing the API routes
   
   
   **TESTING**
