@@ -1,4 +1,4 @@
-POSTIT
+**POSTIT**
 
   
   This is a simple application that allows friends and colleagues create groups for notifications, This way one person can post notifications to everyone by sending a message once. The application allows people create accounts, create groups and add registered users to the groups, and then send messages out to these groups whenever they want.
@@ -7,12 +7,12 @@ Template:This contains the user interfaces using HTML and CSS
 
 Server:This folder house the backend implementation of the project with NodeJS - Express
 
-GETTING STARTED
+**GETTING STARTED**
    
    Clone this repository using the command git clone https://github.com/omolewaaa/POSTIT 
 
 
-PEREQUISITES AND INSTALLATIONS
+**PEREQUISITES AND INSTALLATIONS**
 
   1. Knowledge of HTML, CSS and JavaScript 
   
@@ -23,42 +23,42 @@ PEREQUISITES AND INSTALLATIONS
   4  	Installation of Postman for testing the API routes
   
   
-  TESTING
+  **TESTING**
   
-  1.  To signup
+  1.  **To signup**
         POST: api/users/signup
         
          details (username, email and password).
        
-  2.  To sigin
+  2.  **To sigin**
         POST: api/users/signin
         
         details (useername and password)
   
-  3.  To create a group 
+  3.  **To create a group**
   
         POST : api/group 
         
          details (groupname) 
       
-  4. To add Memember
+  4. **To add Memember**
        POST: api/group/<group id>/user
       
-  5. To post message to a group
+  5. **To post message to a group**
   
        POST: api/group/<group id>/message
        
        details (message)
       
-  6. To Retrieve messages from a specified group
+  6. **To Retrieve messages from a specified group**
   
        GET: api/group/<group id/message
 
 
-  AUTHOR
+  **AUTHOR**
   
   Akinyomi Omolewa
   
-  REFERENCES
+  **REFERENCES**
   
   https://scotch.io/tutorials/getting-started-with-node-express-and-postgres-using-sequelize
