@@ -11,8 +11,6 @@
       border-color: inherit;
   }
   
-
-/* Float cancel and signup buttons and add an equal width */
 .signupbtn {
     float: left;
     width: 50%;
@@ -23,10 +21,8 @@ input[type=text], input[type=password] {
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
 button {
     background-color: #4CAF50;
     color: white;
@@ -65,12 +61,12 @@ position:fixed;
   <div class="container">
 
 <header>
-   <marquee>Welcome to POST-IT Application</marquee>
+   <marquee>Welcome to POST-IT, An exciting application that allows friends and colleagues create groups for notifications, This way one person can post notifications to everyone by sending a message once.</marquee>
 </header>
 <form >
-<h2>Signup</h2>
+<h2>Sign up</h2>
   <div class="container">
-  	<label><b>username</b></label>
+  	<label><b>Username</b></label>
     <input type="text" placeholder="Enter username" name="name" required>
 
     <label><b>Email</b></label>
@@ -80,8 +76,11 @@ position:fixed;
     <input type="password" placeholder="Enter Password" name="psw" required>
     
     <div class="clearfix">
-      <button type="submit"value="signupbtn"><a href = "index.html">Sign Up</a></button>
+      <button type="submit"value="signupbtn">Sign Up</a></button>
     </div>
+    <div class="container" style="background-color:#f1f1f1">
+    <span class="psw">Already registerd <a href="index.html">       Sign in</a></span>
+  </div>
     </form>
 
   

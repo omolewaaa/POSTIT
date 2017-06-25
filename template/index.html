@@ -7,23 +7,18 @@
 		background-color: white;
 		background-size: 5px;
 		border-spacing: 2px;
-    	vertical-align: middle;
-    	border-color: inherit;
+    vertical-align: middle;
+    border-color: inherit;
 	}
-	header, footer {
+	header{
     padding: 1em;
     color: white;
     background-color: black;
     clear: left;
     text-align: center;
 }
-.cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
-}
 
-/* Float cancel and signup buttons and add an equal width */
-.signupbtn {
+.signinbtn {
     float: left;
     width: 50%;
 }
@@ -33,7 +28,6 @@ input[type=text], input[type=password] {
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    box-sizing: border-box;
 }
 
 button {
@@ -58,7 +52,7 @@ position:fixed;
     display: table;
 }
 @media screen and (max-width: 300px) {
-    .signupbtn {
+    .signinbtn {
        width: 100%;
     }
 }
@@ -68,11 +62,11 @@ position:fixed;
 	<div class="container">
 
 <header>
-   <marquee>Welcome to POST-IT Application</marquee>
+   <marquee>Welcome to POST-IT, An exciting application that allows friends and colleagues create groups for notifications, This way one person can post notifications to everyone by sending a message once.</marquee>
 </header>
   
   <form >
-  	<h2>Signin</h2>
+  	<h2>Sign in</h2>
 			<div class="container">
     <label><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="name" required>
@@ -80,7 +74,7 @@ position:fixed;
     <label><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="password" required>
         
-    <button type="submit">Signin</button>
+    <button type="submit" value="signinbtn">Sign in</button>
  
   </div>
 
