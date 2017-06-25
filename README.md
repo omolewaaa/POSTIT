@@ -4,60 +4,60 @@ This is a simple application that allows friends and colleagues create groups fo
 
 **Template:** This contains the user interfaces using HTML and CSS
 
-Server: This folder house the backend implementation of the project with NodeJS - Express
+**Server:** This folder house the backend implementation of the project with NodeJS - Express
 
-GETTING STARTED
+**GETTING STARTED**
 
 Clone this repository using the command git clone https://github.com/omolewaaa/POSTIT
 
-PEREQUISITES AND INSTALLATIONS
+**PEREQUISITES AND INSTALLATIONS**
 
-Knowledge of HTML, CSS and JavaScript
+**.** Knowledge of HTML, CSS and JavaScript
 
-NodeJS installed on your system, you can check out here to download https://nodejs.org/en/download/
+**.** NodeJS installed on your system, you can check out here to download https://nodejs.org/en/download/
 
-PostgreSQL for relational data persistence and Sequelize as the Object relational model.
+**.** PostgreSQL for relational data persistence and Sequelize as the Object relational model.
 
-4 Installation of Postman for testing the API routes
+**.** Installation of Postman for testing the API routes
 
-TESTING
+**END POINT**
 
-To signup
+**. To signup**
 
-POST: api/users/signup
+   POST: api/users/signup
 
-details (username, email and password).
+   details (username, email and password).
 
-To sigin
+**. To sigin**
 
-POST: api/users/signin
+   POST: api/users/signin
 
-details (useername and password)
+   details (useername and password)
 
-To create a group
+**. To create a group**
 
-POST : api/group
+   POST : api/group
 
-details (groupname)
+   details (groupname)
 
-To add Memember
+**. To add Member**
 
-POST: api/group//user
+   POST: api/group//user
 
-To post message to a group
+**. To post message to a group**
 
-POST: api/group//message
+   POST: api/group//message
 
-details (message)
+   details (message)
 
-To Retrieve messages from a specified group
+**. To Retrieve messages from a specified group**
 
-GET: api/group/<group id/message
+   GET: api/group/<group id/message
 
-AUTHOR
+** AUTHOR**
 
-Akinyomi Omolewa
+    Akinyomi Omolewa
 
-REFERENCES
+**REFERENCES**
 
-https://scotch.io/tutorials/getting-started-with-node-express-and-postgres-using-sequelize
+    https://scotch.io/tutorials/getting-started-with-node-express-and-postgres-using-sequelize
