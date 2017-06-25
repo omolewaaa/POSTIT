@@ -33,12 +33,12 @@ exports.create = (req, res) => {
       password : req.body.password
       })
         res.status(200).send({ status: true, message:'Successful', ewa}); 
-   } 
- });
+      } 
+    });
   
-  }
+    }
 
-  });
+   });
 
 
 };
