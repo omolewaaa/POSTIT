@@ -6,57 +6,62 @@ This is a simple application that allows friends and colleagues create groups fo
 
 **Server:** This folder house the backend implementation of the project with NodeJS - Express
 
+
 **GETTING STARTED**
 
 Clone this repository using the command git clone https://github.com/omolewaaa/POSTIT
 
+
 **PEREQUISITES AND INSTALLATIONS**
 
-**.** Knowledge of HTML, CSS and JavaScript
+**1.** Knowledge of HTML, CSS and JavaScript
 
-**.** NodeJS installed on your system, you can check out here to download https://nodejs.org/en/download/
+**2.** NodeJS installed on your system, you can check out here to download https://nodejs.org/en/download/
 
-**.** PostgreSQL for relational data persistence and Sequelize as the Object relational model.
+**3.** PostgreSQL for relational data persistence and Sequelize as the Object relational model.
 
-**.** Installation of Postman for testing the API routes
+**4.** Installation of Postman for testing the API routes
+
 
 **END POINT**
 
-**. To signup**
+**1. To signup**
 
    POST: api/users/signup
 
    details (username, email and password).
 
-**. To sigin**
+**2. To sigin**
 
    POST: api/users/signin
 
    details (useername and password)
 
-**. To create a group**
+**3. To create a group**
 
    POST : api/group
 
    details (groupname)
 
-**. To add Member**
+**4. To add Member**
 
    POST: api/group//user
 
-**. To post message to a group**
+**5. To post message to a group**
 
    POST: api/group//message
 
    details (message)
 
-**. To Retrieve messages from a specified group**
+**6. To Retrieve messages from a specified group**
 
    GET: api/group/<group id/message
+   
 
 ** AUTHOR**
 
     Akinyomi Omolewa
+    
 
 **REFERENCES**
 
