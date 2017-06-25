@@ -59,8 +59,8 @@ exports.login = (req, res) => {
 
    const token = jwt.sign({users
    },
-    "Secret", {
-          expiresIn: 1440 
+    "omolewa", {
+          expiresIn: '3 days'
         });
 
          res.status(201).send({message:'logged in successfully', token:token});

@@ -1,10 +1,13 @@
 const jwt    = require('jsonwebtoken');
 const users = require('./users');
 const groups = require('./groups');
-const messageBoxes = require('./messageBoxes');
+const messages = require('./messages');
+const addMembers = require('./groups');
+
 
 module.exports = {
   users,
   groups,
-  messageBoxes,
+  messages,
+  addMembers,
 };

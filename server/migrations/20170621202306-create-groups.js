@@ -11,10 +11,10 @@ module.exports = {
       groupname: {
         type: Sequelize.STRING
       },
-      users_id: {
-        type: Sequelize.INTEGER
+      //users_id: {
+       // type: Sequelize.INTEGER
         
-      },
+      //},
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

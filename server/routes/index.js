@@ -1,7 +1,8 @@
 const usersController = require('../controller').users;
 const groupController = require('../controller').groups;
-const messageBoxesController = require('../controller').messageBoxes;
-//let verifyToken = require('../middlewares/middlewares');
+const groupMembersController = require('../controller').groupMembers;
+const messageController = require('../controller').messages;
+let verifyToken = require('../middlewares/middlewares');
 //const loginController = require('../controller').login;
 
 
@@ -12,9 +13,10 @@ module.exports = (app) => {
 
   app.post('/api/users/signup', usersController.create);
   app.post('/api/users/signin', usersController.login);
-  app.post('/api/group', groupController.create);
-  app.post('/api/group/groupid/message', messageBoxesController.create);
+  app.post('/api/group', verifyToken, groupController.create);
+  app.post('/api/group/users',verifyToken, groupController.add);
+  app.post('/api/group/groupid/message', verifyToken, messageController.create);
+  app.get('/api/group/groupid/messages', verifyToken, messageController.messages);
 };
-
 
 
