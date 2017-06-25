@@ -1,0 +1,89 @@
+<html>
+<head>
+  <title>Post-It</title>
+  <style type="text/css">
+  table{
+     border: 1px solid black;
+    background-color: white;
+    background-size: 5px;
+    border-spacing: 2px;
+      vertical-align: middle;
+      border-color: inherit;
+  }
+  
+
+/* Float cancel and signup buttons and add an equal width */
+.signupbtn {
+    float: left;
+    width: 50%;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+header {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+form { 
+position:fixed;
+   top:20%;
+   left:30%;
+   width:500px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+@media screen and (max-width: 300px) {
+     .signupbtn {
+       width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+  <div class="container">
+
+<header>
+   <marquee>Welcome to POST-IT Application</marquee>
+</header>
+<form >
+<h2>Signup</h2>
+  <div class="container">
+  	<label><b>username</b></label>
+    <input type="text" placeholder="Enter username" name="name" required>
+
+    <label><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    
+    <div class="clearfix">
+      <button type="submit"value="signupbtn"><a href = "index.html">Sign Up</a></button>
+    </div>
+    </form>
+
+  
+</body>
+</html>
