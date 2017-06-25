@@ -1,3 +1,4 @@
+const validate = require("validate.js");
 module.exports = (sequelize, DataTypes) => {
   const users = sequelize.define('users', {
     username:{ 
@@ -7,7 +8,9 @@ module.exports = (sequelize, DataTypes) => {
     email: {
       type: DataTypes.STRING,
       allowNull: false,
-
+      validate: {
+      isEmail: { msg: 'Invalid email'}
+    }
   },
     password: {
       type: DataTypes.STRING,
