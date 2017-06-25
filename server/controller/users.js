@@ -1,4 +1,7 @@
 const express = require('express');
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
+const salt = bcrypt.genSaltSync(saltRounds);
 const jwt    = require('jsonwebtoken');
 const users = require('../models').users;
 const email = require('../models').users;
@@ -30,9 +33,11 @@ exports.create = (req, res) => {
       ewa.create({
       username: req.body.username,
       email: req.body.email,
-      password : req.body.password
+      password : bcrypt.hashSync((req.body.password), salt)
       })
-        res.status(200).send({ status: true, message:'Successful', ewa}); 
+      .then((ewa) => {
+        res.status(200).send({ status: true, message:'Successful', data: ewa});
+        }); 
       } 
     });
   
