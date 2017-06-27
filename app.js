@@ -2,7 +2,7 @@ const express = require('express');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
-
+const userRoute = require("./server/routes");
 const app = express();
 const jwt    = require('jsonwebtoken');
 //const config = require('../config/config.json');
@@ -20,6 +20,7 @@ app.get('*', (req, res) => res.status(200).send({
   message: 'Its ewa.',
 
 }));
+app.use('/', userRoute);
 //app.post('*', (req, res) => res.status(200).send(users));
 
 module.exports = app;

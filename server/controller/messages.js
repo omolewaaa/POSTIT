@@ -16,9 +16,9 @@ exports.create = (req, res) => {
 
 
 exports.messages = (req, res) => {
-  Message.findAll({
+  Message.findOne({
     where: {
-      groupname: req.params.groupname
+      groupname: req.params.groupname,
     },
   })
   .then((messages) => {

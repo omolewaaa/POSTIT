@@ -10,39 +10,115 @@
     	vertical-align: middle;
     	border-color: inherit;
 	}
-	header, footer {
+	
+form { 
+position:fixed;
+   top:20%;
+   left:30%;
+   width:500px;
+}
+
+  h1  {
+color: gray;
+font-family: arial, sans-serif;
+font-size: 16px;
+font-weight: bold;
+margin-top: 0px;
+margin-bottom: 1px;
+}
+  
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: gray;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+select {
+	width: 100%;
+
+}
+
+
+  h1  {
+color: gray;
+font-family: arial, sans-serif;
+font-size: 16px;
+font-weight: bold;
+margin-top: 0px;
+margin-bottom: 1px;
+}
+  
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: gray;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+header {
     padding: 1em;
     color: white;
     background-color: black;
     clear: left;
     text-align: center;
 }
+form { 
+position:fixed;
+   top:20%;
+   left:30%;
+   width:500px;
+}
+
 
 	</style>
 </head>
 <body>
+	<form>
 	
 	<div class="container">
 
    
-  	<label><b>groupname</b></label>
-    <input type="text" placeholder="Enter groupname" name="name" required>
+  	<label><b>Groupname</b></label>
+  	<input type="text" placeholder="Enter groupname" name="name" required>
+  </div>
+  	<div class="container">
+  	<label><b>Add Members</b></label>
+    
+	<div class="container">
      <select id="attributeNames" name="attributeNames" size="5" weight = "10" multiple="multiple">
     <option value="Apple"></option>
     <option value="Mango"></option>
     <option value="Orange"></option>
     <option value="Banana"></option>                                            
 </select>
-    
+</div>
+    </div>
     <div class="clearfix">
       <button type="submit"value="signupbtn">Create</a></button>
     </div>
-		</td>
-		</tr>
-		</tr>	 
-			<tr>
-				<td align = "left"><input type = "submit" value = "create"  /><td>
-			</tr>
-	</table>
+	</form>
 </body>
 </html>

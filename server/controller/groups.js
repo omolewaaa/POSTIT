@@ -24,12 +24,12 @@ exports.create = (req, res) => {
 
     else {
       //const decoded = req.decoded;
-   const users_id = req.decoded.data;
+    const user_id = req.decoded.users.id;
     groupnames.create({
       groupname: req.body.groupname,
-      users_id: users_id
+      users_id: user_id
     })
-     .then(groupnames => res.status(201).send({message: 'group successfully created', data: groupnames}));
+     .then(groupnames => res.status(201).send({message: 'group successfully created', "groupname": groupnames.groupname, "Admin": groupnames.users_id}));
     
   }
 });
@@ -49,7 +49,7 @@ exports.add = (req, res) => {
   if(!users){   
  res.status(404).send({status: false, message:'User not found'});
   }
-   else{
+   /*else{
     user.findOne({
     where: {
       groupname: req.body.groupname,
@@ -59,19 +59,21 @@ exports.add = (req, res) => {
     if(!user){
       res.status(400).send({ status: false, message:'groupname not found'});
     }
-
+*/
   else{
+    const Admin = req.decoded.users.username;
+    const group = req.decoded.groups.groupname;
     groupMembers.create({
-        groupname: req.body.groupname,
+        groupname: group,
         username: req.body.username
       
    })
 
-  .then(groupMembers => res.status(200).send({status: true, message: "User added succefully", data: groupMembers}));
+  .then(groupMembers => res.status(200).send({status: true, message: "User added succefully", data: groupMembers, Admin}));
   }
  }); 
- } 
-});
+ //} 
+//});
 
 };
 
