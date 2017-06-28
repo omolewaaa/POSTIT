@@ -25,11 +25,12 @@ exports.create = (req, res) => {
     else {
       //const decoded = req.decoded;
     const user_id = req.decoded.users.id;
+    const name = req.decoded.users.username;
     groupnames.create({
       groupname: req.body.groupname,
       users_id: user_id
     })
-     .then(groupnames => res.status(201).send({message: 'group successfully created', "groupname": groupnames.groupname, "Admin": groupnames.users_id}));
+     .then(groupnames => res.status(201).send({message: 'group successfully created', "groupname": groupnames.groupname, "Admin_id": groupnames.users_id, Admin_name: name}));
     
   }
 });
@@ -62,9 +63,9 @@ exports.add = (req, res) => {
 */
   else{
     const Admin = req.decoded.users.username;
-    const group = req.decoded.groups.groupname;
+    //const group = req.decoded.groups.groupname;
     groupMembers.create({
-        groupname: group,
+        groupname: req.params.groupname,
         username: req.body.username
       
    })
