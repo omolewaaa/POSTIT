@@ -25,7 +25,7 @@ const groups = require('../models').groups;
 */
 
 module.exports = (req, res, next) => {
- const token = (req.body['x-access-token'] ) || (req.headers['x-access-token'] )
+ const token = (req.body['x-access-token'] ) || (req.headers['x-access-token'] ) || (req.query['x-access-token'] )
   // decode token
   //if (!token) {
    // return res.status(403).send({ 

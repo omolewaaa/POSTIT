@@ -20,7 +20,9 @@ app.get('*', (req, res) => res.status(200).send({
   message: 'Its ewa.',
 
 }));
-//app.use('/', userRoute);
-//app.post('*', (req, res) => res.status(200).send(users));
+
+//app.get('/', messages (req, res) => {
+//	res.send(messages)
+//}));
 
 module.exports = app;
