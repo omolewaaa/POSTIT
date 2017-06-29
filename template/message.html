@@ -3,40 +3,114 @@
 <title>Send message to any group</title>
 </head>
 <style type="text/css">
-	table{
-		 border: 2px solid black;
-		background-color: gray;
-		background-size: 5px;
-		border-spacing: 2px;
-    	vertical-align: middle;
-    	border-color: inherit;
-	}
+	form { 
+position:fixed;
+   top:20%;
+   left:30%;
+   width:500px;
+}
+
+  h1  {
+color: gray;
+font-family: arial, sans-serif;
+font-size: 16px;
+font-weight: bold;
+margin-top: 0px;
+margin-bottom: 1px;
+}
+  
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: gray;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+select {
+  width: 100%;
+
+}
+
+
+  h1  {
+color: gray;
+font-family: arial, sans-serif;
+font-size: 16px;
+font-weight: bold;
+margin-top: 0px;
+margin-bottom: 1px;
+}
+  
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: gray;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+header {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+form { 
+position:fixed;
+   top:20%;
+   left:30%;
+   width:500px;
+}
 	</style>
 <body>
-	<div>
-   <table align = "center">
-   	<tr>
-		<td>
-			<h3><font color = "red">MESSAGE</font></h3> 
-			</td>
-		</tr>
-   	<tr>
-   		<td>Message</td>
-   		<td><textarea></textarea></td>
-   		<tr>
-   			<td>Select group</td>
-   			<td>
-		<select multiple = "multiple" id="sel">
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-            </select></td>
-   		</tr>
-   		<tr><td></td>
-				<td align = "left"><input type = "submit" value = "Send Message" /><td>
-			</tr>
-   </table>
+	<form>
+    <h1>Post Message </h1>
+  <div class="container">
+
+  
+  <div class="container">
+
+   
+    <label><b>Message</b></label>
+    <textarea size="5" weight = "10"></textarea>
+  </div>
+    <div class="container">
+    <label><b>select group</b></label>
+    
+  <div class="container">
+     <select id="attributeNames" name="attributeNames" size="5" weight = "10" multiple="multiple">
+    <option value="Apple"></option>
+    <option value="Mango"></option>
+    <option value="Orange"></option>
+    <option value="Banana"></option>                                            
+</select>
 </div>
+    </div>
+    <div class="clearfix">
+      <button type="submit"value="signupbtn">Create</a></button>
+    </div>
+  </form>
 </body>
 </html>
