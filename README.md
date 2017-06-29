@@ -7,9 +7,11 @@ This is a simple application that allows friends and colleagues create groups fo
 **Server:** This folder house the backend implementation of the project with NodeJS - Express
 
 
+
 **GETTING STARTED**
 
    Clone this repository using the command git clone https://github.com/omolewaaa/POSTIT
+
 
 
 **PEREQUISITES AND INSTALLATIONS**
@@ -23,46 +25,47 @@ This is a simple application that allows friends and colleagues create groups fo
    **4.** Installation of Postman for testing the API routes
 
 
+
 **END POINT**
 
    **1. To signup**
 
-      POST: api/users/signup
+     POST: api/users/signup
 
-      details (username, email and password).
+     details (username, email and password).
 
    **2. To sigin**
 
-      POST: api/users/signin
+     POST: api/users/signin
 
-      details (useername and password)
+     details (useername and password)
 
    **3. To create a group**
 
-      POST : api/group
+     POST : api/group
 
-      details (groupname)
+     details (groupname)
 
    **4. To add Member**
 
-      POST: api/group//user
+     POST: api/group//user
 
    **5. To post message to a group**
 
-      POST: api/group//message
+     POST: api/group//message
 
-      details (message)
+     details (message)
 
    **6. To Retrieve messages from a specified group**
 
-      GET: api/group/<group id/message
+     GET: api/group/<group id/message
    
 
    ** AUTHOR**
 
-      Akinyomi Omolewa
+     Akinyomi Omolewa
     
 
    **REFERENCES**
 
-      https://scotch.io/tutorials/getting-started-with-node-express-and-postgres-using-sequelize
+     https://scotch.io/tutorials/getting-started-with-node-express-and-postgres-using-sequelize
