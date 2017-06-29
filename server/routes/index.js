@@ -17,7 +17,7 @@ module.exports = (app) => {
   app.post('/api/group', verifyToken, groupController.create);
   app.post('/api/group/users',verifyToken, groupController.add);
   app.post('/api/group/groupid/message', verifyToken, messageController.create);
-  app.get('/api/group/groupid/message', verifyToken, messageController.messages);
+  app.get('/api/group/groupid/messages', verifyToken, messageController.messages);
 };
 
 

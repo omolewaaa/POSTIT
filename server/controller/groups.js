@@ -1,12 +1,11 @@
-//const express = require('express');
+
 const jwt    = require('jsonwebtoken');
 const users = require('../models').users;
 const user = require('../models').groups;
 const groups = require('../models').groups;
-//const middle = require('../middlewares').middlewares;
 const groupMembers = require('../models').groupMembers;
 const groupnames = require('../models').groups;
-//const Members = require('../models').groups;
+
 
 
 
@@ -23,7 +22,7 @@ exports.create = (req, res) => {
       }
 
     else {
-      //const decoded = req.decoded;
+    
     const user_id = req.decoded.users.id;
     const name = req.decoded.users.username;
     groupnames.create({
@@ -34,7 +33,6 @@ exports.create = (req, res) => {
     
   }
 });
-   //res.send(res.decoded.users_id)
 
 };
 
@@ -80,54 +78,3 @@ exports.add = (req, res) => {
 
 
 
-/*exports.login = (req, res) => {
-  users.findOne({
-    where: {
-      username: req.body.username,
-    },
-  })
-  .then((users) => {
-    if(!users){
-      res.status(404).send({message:'User not found'});
-      }
-      else{
-   //res.status(201).send({ status: true, message:'logged in successfully'});
-
-   const token = jwt.sign({users
-   },
-    "omolewa", {
-          expiresIn: '3 days'
-        });
-
-         res.status(201).send({message:'logged in successfully', token:token});
-          
-}
-});
-};
-
-
-
-module.exports = {
-  Members (req, res) {
-    users.findOne({
-    where: {
-      groupname: req.body.groupname,
-    },
- })
-  .then((users) => {
-   if(!users){   
- groupMembers.create({
-        groupname: req.params.groupname,
-        username: req.params.username
-      
-   })
-  res.status(200).send({status: true, message: "User added succefully"});
-  }
-   else{
-    res.status(404).send({status: false, message:'User not found'});
-  
-}
-});
-}
-};
-*/

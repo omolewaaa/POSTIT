@@ -13,4 +13,3 @@ login (req, res) {
 
 
 
-//Project.findOne({ where: {title: 'aProject'} })

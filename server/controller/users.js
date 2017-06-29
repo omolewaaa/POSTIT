@@ -59,13 +59,17 @@ exports.login = (req, res) => {
       username: req.body.username,
     },
   })
+
   .then((users) => {
     if(!users){
       res.status(404).send({message:'User not found'});
       }
-      else{
-   //res.status(201).send({ status: true, message:'logged in successfully'});
-
+      
+   // else {
+     // if (users.username !== users.password){
+      //  res.status(404).send({message: "confirm username or password"})
+     // }
+    else {
    const token = jwt.sign({users
    },
     "omolewa", {
@@ -74,6 +78,7 @@ exports.login = (req, res) => {
 
          res.status(201).send({message:'logged in successfully', token:token});
           
+
 }
 });
 };
