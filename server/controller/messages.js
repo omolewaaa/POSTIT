@@ -24,7 +24,7 @@ exports.messages = (req, res) => {
     //},
   })
   .then((messages) => {
-    res.status(200).send(messages);
+    res.status(200).send({message:'Successful', data: messages});
   });
 };
 
