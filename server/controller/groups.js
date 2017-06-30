@@ -59,7 +59,8 @@ exports.add = (req, res) => {
       res.status(400).send({ status: false, message:'groupname not found'});
     }
 */
-  else{
+  else {
+    
     const Admin = req.decoded.users.username;
     //const group = req.decoded.groups.groupname;
     groupMembers.create({
