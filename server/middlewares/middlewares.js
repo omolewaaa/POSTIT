@@ -26,15 +26,7 @@ const groups = require('../models').groups;
 
 module.exports = (req, res, next) => {
  const token = (req.body['x-access-token'] ) || (req.headers['x-access-token'] ) || (req.query['x-access-token'] )
-  // decode token
-  //if (!token) {
-   // return res.status(403).send({ 
-  //      success: false, 
-      //  message: 'No token provided.' 
-   // });
-
-  //} 
-  //else {
+  
     if (token) {
       jwt.verify(token, 'omolewa', (err, decoded)=> {
         if (err) {
@@ -45,7 +37,7 @@ module.exports = (req, res, next) => {
    // return res.send(decoded)
       
  }
-      //return res.status(200).send(decoded)
+      
       });
     }
     else {
@@ -57,4 +49,3 @@ module.exports = (req, res, next) => {
  // }
 
 }
-// process.env.TOKEN_SECRET
