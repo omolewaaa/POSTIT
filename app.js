@@ -22,6 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //pg.connect(process.env.DATABASE_URL);
 
 //app.use('/', router);
+app.get('env');
 require('./server/routes')(app);
 app.get('*', (req, res) => res.status(200).send({
   message: 'welcome to postit application.',
