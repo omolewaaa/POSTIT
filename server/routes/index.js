@@ -8,9 +8,9 @@ let verifyToken = require('../middlewares/middlewares');
 
 
 module.exports = (app) => {
-  //app.get('/api', (req, res) => res.status(200).send({
-   // message: 'welcome to postit application.',
-//  }));
+  app.get('/api', (req, res) => res.status(200).send({
+    message: 'Welcome to the users API!',
+  }));
 
   app.post('/api/users/signup', usersController.create);
   app.post('/api/users/signin', usersController.login);
