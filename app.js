@@ -4,16 +4,19 @@ const bodyParser = require('body-parser');
 //const bcrypt = require('bcryptjs');
 
 const app = express();
+require('dotenv').config();
 //const jwt    = require('jsonwebtoken');
 //const pg = require('pg');
 const router = require('./server/routes');
+app.use('/', router )
 
 
-require('dotenv').config();
+
+
 
 app.use(logger('dev'));
 
-app.post('/', router);
+//app.post('/', router);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
