@@ -15,6 +15,9 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+//app.use('/', userRoute);
+
+
 require('./server/routes')(app);
 app.get('*', (req, res) => res.status(200).send({
   message: 'welcome to postit application.',

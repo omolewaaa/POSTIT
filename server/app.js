@@ -6,7 +6,7 @@ const bcrypt = require('bcrypt');
 const app = express();
 const jwt    = require('jsonwebtoken');
 //const config = require('../config/config.json');
-
+require('dotenv').config();
 
 app.use(logger('dev'));
 
@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 require('./server/routes')(app);
 app.get('*', (req, res) => res.status(200).send({
-  message: 'Its ewa.',
+  message: 'welcome to postit application.',
 
 }));
 

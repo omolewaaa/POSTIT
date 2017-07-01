@@ -1,3 +1,4 @@
+
 {
   "development": {
     "username": "postgres",
@@ -21,6 +22,7 @@
     "database": "process.env.PRODUCTION_DATABASE",
     "host": "process.env.PRODUCTION_HOST",
     "port": 5432,
+    "protocol":"postgres",
     "dialect": "postgres"
   }
 }
