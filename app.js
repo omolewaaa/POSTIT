@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 require('./server/routes')(app);
 app.get('*', (req, res) => res.status(200).send({
-  message: 'Its ewa.',
+  message: 'welcome to postit application.',
 
 }));
 
