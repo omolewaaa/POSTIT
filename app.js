@@ -5,6 +5,8 @@ const bcrypt = require('bcrypt');
 //const userRoute = require("./server/routes");
 const app = express();
 const jwt    = require('jsonwebtoken');
+const pg = require('pg');
+
 //const config = require('../config/config.json');
 require('dotenv').config();
 
@@ -16,7 +18,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 //app.use('/', userRoute);
-
+//pg.connect(process.env.DATABASE_URL);
 
 require('./server/routes')(app);
 app.get('*', (req, res) => res.status(200).send({
