@@ -26,7 +26,7 @@ app.get('*', (req, res) => res.status(200).send({
   message: 'welcome to postit application.',
 
 }));
-app.post('/', app)
+app.post('/', (req, res) => res.status(200).send());
 
 
 
