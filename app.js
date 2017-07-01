@@ -14,14 +14,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 
-app.get('env');
+//app.get('env');
 require('./server/routes')(app);
 app.get('*', (req, res) => res.status(200).send({
   message: 'welcome to postit application.',
 
 }));
-const router = require('./server/routes');
-app.use('/', router)
+//const router = require('./server/routes');
+//app.use('/', router)
 
 
 module.exports = app;
