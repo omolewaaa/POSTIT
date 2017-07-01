@@ -1,4 +1,4 @@
-const jwt    = require('jsonwebtoken');
+//const jwt    = require('jsonwebtoken');
 const users = require('./users');
 const groups = require('./groups');
 const messages = require('./messages');
