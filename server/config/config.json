@@ -17,9 +17,7 @@
     "dialect": "postgres"
   },
   "production": {
-    "DATABASE_URL": "postgres://qeundioe:oKUDgAJCVsC2OOisI_1hTcHcsbwuOKf5@pellefant.db.elephantsql.com:5432/qeundioe",
-    "port": 5432,
-    "protocol":"postgres",
+    "url": "process.env.DATABASE_URL",
     "dialect": "postgres"
   }
 }
