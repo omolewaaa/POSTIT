@@ -35,3 +35,4 @@
 22 error     <https://github.com/npm/npm/issues>
 23 verbose exit [ 1, true ]
 node_modules
+npm-debug.log
