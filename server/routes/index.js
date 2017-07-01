@@ -1,4 +1,3 @@
-const express = require('express');
 const usersController = require('../controller').users;
 const groupController = require('../controller').groups;
 const groupMembersController = require('../controller').groupMembers;
@@ -19,5 +18,4 @@ module.exports = (app) => {
   app.post('/api/group/groupid/message', verifyToken, messageController.create);
   app.get('/api/group/groupid/messages', verifyToken, messageController.messages);
 };
-
 
