@@ -1,10 +1,10 @@
 const express = require('express');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
-const bcrypt = require('bcryptjs');
+//const bcrypt = require('bcryptjs');
 //const userRoute = require("./server/routes");
 const app = express();
-const jwt    = require('jsonwebtoken');
+//const jwt    = require('jsonwebtoken');
 //const pg = require('pg');
 const router = require('./server/routes');
 
