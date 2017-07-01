@@ -5,17 +5,11 @@ const bodyParser = require('body-parser');
 
 const app = express();
 require('dotenv').config();
-//const jwt    = require('jsonwebtoken');
-//const pg = require('pg');
-//const router = require('./server/routes/index.js');
-
-
 
 
 
 app.use(logger('dev'));
 
-//app.post('/', router);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -26,9 +20,8 @@ app.get('*', (req, res) => res.status(200).send({
   message: 'welcome to postit application.',
 
 }));
-app.post('/', (req, res) => res.status(200).send());
-
-
+const router = require('./server/routes');
+app.use('/', router)
 
 
 module.exports = app;
