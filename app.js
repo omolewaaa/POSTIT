@@ -7,7 +7,7 @@ const app = express();
 require('dotenv').config();
 //const jwt    = require('jsonwebtoken');
 //const pg = require('pg');
-const router = require('./server/routes');
+const router = require('./server/routes/index.js');
 app.use('/', router )
 
 
