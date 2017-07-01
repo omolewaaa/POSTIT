@@ -7,8 +7,7 @@ const app = express();
 require('dotenv').config();
 //const jwt    = require('jsonwebtoken');
 //const pg = require('pg');
-const router = require('./server/routes/index.js');
-app.post('/', router )
+//const router = require('./server/routes/index.js');
 
 
 
@@ -27,6 +26,8 @@ app.get('*', (req, res) => res.status(200).send({
   message: 'welcome to postit application.',
 
 }));
+app.post('/', app)
+
 
 
 
