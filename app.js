@@ -1,27 +1,23 @@
 const express = require('express');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 //const userRoute = require("./server/routes");
 const app = express();
 const jwt    = require('jsonwebtoken');
 //const pg = require('pg');
 const router = require('./server/routes');
 
-//const config = require('../config/config.json');
+
 require('dotenv').config();
 
 app.use(logger('dev'));
 
-//app.set('superSecret', config.secret);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-//app.use('/', userRoute);
-//pg.connect(process.env.DATABASE_URL);
 
-//app.use('/', router);
 app.get('env');
 require('./server/routes')(app);
 app.get('*', (req, res) => res.status(200).send({
@@ -29,8 +25,6 @@ app.get('*', (req, res) => res.status(200).send({
 
 }));
 
-//app.get('/', messages (req, res) => {
-//	res.send(messages)
-//}));
+
 
 module.exports = app;
