@@ -13,7 +13,7 @@ require('dotenv').config();
 
 app.use(logger('dev'));
 
-app.use('/', router);
+app.post('/', router);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
