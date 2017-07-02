@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 //const bcrypt = require('bcryptjs');
 
 const app = express();
+const db = require('./server/models/index');
 require('dotenv').config();
 
 
