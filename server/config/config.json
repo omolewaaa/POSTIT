@@ -17,11 +17,10 @@
     "dialect": "postgres"
   },
   "production": {
-    "username": "process.env.PRODUCTION_USERNAME",
-    "password": "process.env.PRODUCTION_PASSWORD",
-    "database": "process.env.PRODUCTION_DATABASE",
-    "host": "process.env.PRODUCTION_HOST",
-    "dialect": "postgres",
-    "port": 5432,
+    "username": "postgres",
+    "password": "omolewa1993",
+    "database": "post_it",
+    "host": 5432,
+    "port": "postgres"
   }
 }
