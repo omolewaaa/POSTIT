@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/omolewaaa/POSTIT.svg?branch=development)](https://travis-ci.org/omolewaaa/POSTIT)
-[![Coverage Status](https://coveralls.io/repos/github/omolewaaa/POSTIT/badge.svg?branch=frontEnd)](https://coveralls.io/github/omolewaaa/POSTIT?branch=frontEnd)
+[![Coverage Status](https://coveralls.io/repos/github/omolewaaa/POSTIT/badge.svg?branch=development)](https://coveralls.io/github/omolewaaa/POSTIT?branch=development)
+
+
 **POSTIT**
 
 This is a simple application that allows friends and colleagues create groups for notifications, This way one person can post notifications to everyone by sending a message once. The application allows people create accounts, create groups and add registered users to the groups, and then send messages out to these groups whenever they want.
