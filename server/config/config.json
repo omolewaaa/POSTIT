@@ -18,7 +18,7 @@
   },
   "production": {
     "username": "qeundioe",
-    "password": "process.env.PRODUCTION_PASSWORD",
+    "password": "oKUDgAJCVsC2OOisI_1hTcHcsbwuOKf5",
     "database": "qeundioe",
     "host": "pellefant.db.elephantsql.com",
     "port": 5432,
