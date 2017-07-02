@@ -17,13 +17,13 @@ This is a simple application that allows friends and colleagues create groups fo
 **PEREQUISITES AND INSTALLATIONS**
 
 
-  **1.**  Knowledge of HTML, CSS and JavaScript
+  **1.**    Knowledge of HTML, CSS and JavaScript
 
-  **2.**  NodeJS installed on your system, you can check out here to download https://nodejs.org/en/download/
+  **2.**     NodeJS installed on your system, you can check out here to download https://nodejs.org/en/download/
 
-  **3.**  PostgreSQL for relational data persistence and Sequelize as the Object relational model.
+  **3.**     PostgreSQL for relational data persistence and Sequelize as the Object relational model.
 
-  **4.**  Installation of Postman for testing the API routes
+  **4.**     Installation of Postman for testing the API routes
 
 
 
@@ -62,11 +62,12 @@ This is a simple application that allows friends and colleagues create groups fo
    GET: api/group/groupid/messages
    
    
- **Deployment**
+ **DEPLOYMENT**
  
    The application is deployed on heroku
+   
 
- ** AUTHOR**
+ **AUTHOR**
 
    Akinyomi Omolewa
     
