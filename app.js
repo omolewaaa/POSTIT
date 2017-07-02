@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const db = require('./server/models/index');
 require('dotenv').config();
+const path = require('path');
 
 
 
