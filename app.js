@@ -4,11 +4,11 @@ const bodyParser = require('body-parser');
 //const bcrypt = require('bcryptjs');
 
 const app = express();
-const db = require('./server/models/index');
+
 require('dotenv').config();
 const path = require('path');
 
-
+const db = require('./server/models/index');
 
 app.use(logger('dev'));
 
