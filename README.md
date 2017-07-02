@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/omolewaaa/POSTIT.svg?branch=master)](https://travis-ci.org/omolewaaa/POSTIT)
+[![Build Status](https://travis-ci.org/omolewaaa/POSTIT.svg?branch=development)](https://travis-ci.org/omolewaaa/POSTIT)
 
 **POSTIT**
 
@@ -80,4 +80,4 @@ This is a simple application that allows friends and colleagues create groups fo
    
    
    
-   [![Build Status](https://travis-ci.org/omolewaaa/POSTIT.svg?branch=master)](https://travis-ci.org/omolewaaa/POSTIT)
+   
