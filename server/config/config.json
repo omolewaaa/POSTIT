@@ -17,9 +17,9 @@
     "dialect": "postgres"
   },
   "production": {
-    "username": "process.env.PRODUCTION_USERNAME",
+    "username": "qeundioe",
     "password": "process.env.PRODUCTION_PASSWORD",
-    "database": "process.env.PRODUCTION_DATABASE",
+    "database": "qeundioe",
     "host": "pellefant.db.elephantsql.com",
     "port": 5432,
     "dialect": "postgres"
