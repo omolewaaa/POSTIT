@@ -75,3 +75,7 @@ This is a simple application that allows friends and colleagues create groups fo
  **REFERENCES**
 
    https://scotch.io/tutorials/getting-started-with-node-express-and-postgres-using-sequelize
+   
+   
+   
+   [![Build Status](https://travis-ci.org/omolewaaa/POSTIT.svg?branch=master)](https://travis-ci.org/omolewaaa/POSTIT)
