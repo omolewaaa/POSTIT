@@ -20,10 +20,10 @@ module.exports = (sequelize, DataTypes) => {
    {
     classMethods: {
       associate: (models) => {
-        users.hasMany(models.groups, {
+        //users.hasMany(models.groups, {
          // foreignKey: 'usersId',
          // as: 'users',
-        });
+       // });
      },
     }, 
   });
