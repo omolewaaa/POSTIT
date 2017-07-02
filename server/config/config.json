@@ -17,10 +17,6 @@
     "dialect": "postgres"
   },
   "production": {
-    "username": "postgres",
-    "password": "omolewa1993",
-    "database": "post_it",
-    "host": 5432,
-    "port": "postgres"
+    "use_env_variable": "DATABASE_URL"
   }
 }
