@@ -4,7 +4,6 @@
 
 [![Build Status](https://travis-ci.org/omolewaaa/POSTIT.svg?branch=development)](https://travis-ci.org/omolewaaa/POSTIT)
 [![Coverage Status](https://coveralls.io/repos/github/omolewaaa/POSTIT/badge.svg?branch=development)](https://coveralls.io/github/omolewaaa/POSTIT?branch=development)
-[![Test Coverage](https://codeclimate.com/github/codeclimate/codeclimate/badges/coverage.svg)](https://codeclimate.com/github/codeclimate/codeclimate/coverage)
 
 This is a simple application that allows friends and colleagues create groups for notifications, This way one person can post notifications to everyone by sending a message once. The application allows people create accounts, create groups and add registered users to the groups, and then send messages out to these groups whenever they want.
 
@@ -23,13 +22,13 @@ This is a simple application that allows friends and colleagues create groups fo
 **PEREQUISITES AND INSTALLATIONS**
 
 
-  **1.**    Knowledge of HTML, CSS and JavaScript
+  **.**    Knowledge of HTML, CSS and JavaScript
 
-  **2.**     NodeJS installed on your system, you can check out here to download https://nodejs.org/en/download/
+  **.**     NodeJS installed on your system, you can check out here to download https://nodejs.org/en/download/
 
-  **3.**     PostgreSQL for relational data persistence and Sequelize as the Object relational model.
+  **.**     PostgreSQL for relational data persistence and Sequelize as the Object relational model.
 
-  **4.**     Installation of Postman for testing the API routes
+  **.**     Installation of Postman for testing the API routes
 
 
 
