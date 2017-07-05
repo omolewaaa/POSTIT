@@ -44,7 +44,7 @@ This is a simple application that allows friends and colleagues create groups fo
 
        POST: api/users/signin
 
-       Input (useername and password)
+       Input (username and password)
 
  * **To create a group**
 
@@ -54,7 +54,7 @@ This is a simple application that allows friends and colleagues create groups fo
 
  * **To add Member**
 
-   POST: api/group//user
+   POST: api/group/user
 
  * **To post message to a group**
 
