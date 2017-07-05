@@ -36,15 +36,15 @@ This is a simple application that allows friends and colleagues create groups fo
 
  *  **To signup**
 
-   POST: api/users/signup
+       POST: api/users/signup
 
-   Input (username, email and password).
+       Input (username, email and password).
 
  *  **To sigin**
 
-   POST: api/users/signin
+       POST: api/users/signin
 
-   Input (useername and password)
+       Input (useername and password)
 
  * **To create a group**
 
