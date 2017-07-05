@@ -24,11 +24,11 @@ This is a simple application that allows friends and colleagues create groups fo
 
   *    Knowledge of HTML, CSS and JavaScript
 
-  **2.**     NodeJS installed on your system, you can check out here to download https://nodejs.org/en/download/
+  *     NodeJS installed on your system, you can check out here to download https://nodejs.org/en/download/
 
-  **3.**     PostgreSQL for relational data persistence and Sequelize as the Object relational model.
+  *     PostgreSQL for relational data persistence and Sequelize as the Object relational model.
 
-  **4.**     Installation of Postman for testing the API routes
+  *     Installation of Postman for testing the API routes
 
 
 
