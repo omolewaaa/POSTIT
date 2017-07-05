@@ -22,7 +22,7 @@ This is a simple application that allows friends and colleagues create groups fo
 **PEREQUISITES AND INSTALLATIONS**
 
 
-  **1.**    Knowledge of HTML, CSS and JavaScript
+  *    Knowledge of HTML, CSS and JavaScript
 
   **2.**     NodeJS installed on your system, you can check out here to download https://nodejs.org/en/download/
 
