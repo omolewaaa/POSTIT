@@ -22,47 +22,47 @@ This is a simple application that allows friends and colleagues create groups fo
 **PEREQUISITES AND INSTALLATIONS**
 
 
-  **1.**    Knowledge of HTML, CSS and JavaScript
+  *    Knowledge of HTML, CSS and JavaScript
 
-  **2.**     NodeJS installed on your system, you can check out here to download https://nodejs.org/en/download/
+  *    NodeJS installed on your system, you can check out here to download https://nodejs.org/en/download/
 
-  **3.**     PostgreSQL for relational data persistence and Sequelize as the Object relational model.
+  *    PostgreSQL for relational data persistence and Sequelize as the Object relational model.
 
-  **4.**     Installation of Postman for testing the API routes
+  *    Installation of Postman for testing the API routes
 
 
 
 **END POINT**
 
- **1. To signup**
+ *  **To signup**
 
-   POST: api/users/signup
+       POST: api/users/signup
 
-   Input (username, email and password).
+       Input (username, email and password).
 
- **2. To sigin**
+ *  **To sigin**
 
-   POST: api/users/signin
+       POST: api/users/signin
 
-   Input (useername and password)
+       Input (username and password)
 
- **3. To create a group**
+ * **To create a group**
 
    POST : api/group
 
    Input (groupname)
 
- **4. To add Member**
+ * **To add Member**
 
-   POST: api/group//user
+   POST: api/group/user
 
- **5. To post message to a group**
+ * **To post message to a group**
 
    POST: api/group/groupid/message
 
    Input (message)
 
- **6. To Retrieve messages from a specified group**
+ * **To Retrieve messages from a specified group**
 
    GET: api/group/groupid/messages
    
