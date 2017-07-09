@@ -15,6 +15,7 @@ if( 'NODE_ENV' !== 'test') {
 app.use(logger('dev'));
 }
 
+app.post('/api/users/signup');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
