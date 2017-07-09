@@ -12,8 +12,8 @@ chai.use(chaiHttp);
 describe('status 200', () => {
       it('it should POST a  user', (done) => {
         const user = {
-            username: "omolewa",
-            email: "akinyomiomolewa30@gmail.com",
+            username: "ooooooooo",
+            email: "ak30@gmail.com",
             password: "ewa"
         }
         chai.request(app)
@@ -22,7 +22,7 @@ describe('status 200', () => {
             .end((err, res) => {
                 res.should.have.status(200);
                 res.body.should.be.a('object');
-                res.body.should.have.property('message').eql('Signup was successful');
+                res.body.should.have.property('message').eql('You are registered Successfully');
               done();
             });
       });
