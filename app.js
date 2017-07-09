@@ -10,7 +10,10 @@ const path = require('path');
 
 const db = require('./server/models/index');
 
+if( 'NODE_ENV' !== 'test') {
+
 app.use(logger('dev'));
+}
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

@@ -1,123 +1,59 @@
-<!DOCTYPE html>
+
 <html>
 <head>
-<style> 
-.flex-container {
-    width: 350px;
-    height: 100%;
-    text-align: left;
-	position:fixed;
-   top:2%;
-   left:35%;
-   right: 25%
-
-  
-
-}
-h3 {
-	
-   text-align: center;
-   font-family: Arial;
-   font-size: 14;
-   color: white;
-
-}
-
-.flex-item {
-    background-color: white;
-    width: 350px;
-    height: 100px;
-    margin: 5px;
-   
-}
-p {
-	font-family:courier;"
-}
-
-table {
-	 padding: 2px 2px;
-	 
-}
-h5 {
-	font-size: 12;
-	font-family: Arial;
-	font: bold;
-}
-
-h4 {
-  font-size: 8;
-  font-family: monospace;
-  font: italic;
-  color: white;
-}
-
-h6 {
-  font-size: 12;
-  font-family: monospace;
-  font: italic;
-  color: white;
-  text-align: right;
-}
-body {
-	background:black;
-}
-</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"/>
+<title>Message Board</title>
 </head>
 <body>
-<div class="flex-container">
-  <table>
-    <tr>
-<td align = "left"><a href="message.html"><i>Send Message </i></a></td>
-<td align = "right"><a href="create.html" ><i>Create Group</i></a></td>
-</tr>
-</table>
-<h3>Notifications</h3>
-  <div class="flex-item">
-  	<table ><tr>
-  		<td><img src="group.png" style="width:50px;height:50px;"/></td>
-  <td><h5>Team bootcamp</h5>
-  <p> Hey! guys, lets meet at the restaurant by 12pm today</p></td>
-</tr>
-</table>
+  <!-- start navigation bar !-->
+     <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Postit</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="messageBoard.html"> <i class="material-icons prefix">refresh</i></a></li>
+        <li><a href="create.html">New Group</a></li>
+        <li><a href="message.html">message</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- end navigation bar !-->
+  <!-- start page content !-->
+  	<table>
+      <tr>
+  		  <td><img src="group.png" style="width:50px;height:50px;"/></td>
+        <td><h5>Team bootcamp</h5>
+        <p> Hey! guys, lets meet at the restaurant by 12pm today</p></td>
+      </tr>
   
-</div>
-  <div class="flex-item"> 
-	<table ><tr>
-  		<td><img src="group.png" style="width:50px;height:50px;"/></td>
-  <td><h5>NYSC</h5>
-  <p> Payment of aso-ebi, UBN Acct num:00005050404</p></td>
-</tr>
-</table>
 
-  </div>
-  <div class="flex-item">
-<table ><tr>
-  		<td><img src="group.png" style="width:50px;height:50px;"/></td>
-  <td><h5>Ushering dept</h5>
-  <p> The dress code for next week sunday is white and black</p></td>
-</tr>
-</table>
-  </div>
-  <div class="flex-item">
-<table ><tr>
-  		<td><img src="group.png" style="width:50px;height:50px;"/></td>
-  <td><h5>Team bootcamp</h5>
-  <p> Hey! guys, where do we meet</p></td>
-</tr>
-</table>
-  </div>
-  <div class="flex-item">
-<table ><tr>
-  		<td><img src="group.png" style="width:50px;height:50px;"/></td>
-  <td><h5>Team bootcamp</h5>
-  <p> Hey! guys, where do we meet</p></td>
-
-</tr>
-</table>
-  </div>    
-</div>  
-</div>
-
-
+	    <tr>
+  	    <td><img src="group.png" style="width:50px;height:50px;"/></td>
+        <td><h5>NYSC</h5>
+        <p> Payment of aso-ebi, UBN Acct num:00005050404</p></td>
+      </tr>
+  
+      <tr>
+  		  <td><img src="group.png" style="width:50px;height:50px;"/></td>
+        <td><h5>Ushering dept</h5>
+        <p> The dress code for next week sunday is white and black</p></td>
+      </tr>
+  
+      <tr>
+  		  <td><img src="group.png" style="width:50px;height:50px;"/></td>
+        <td><h5>Team bootcamp</h5>
+        <p> Hey! guys, where do we meet</p></td>
+      </tr>
+ 
+      <tr>
+  		  <td><img src="group.png" style="width:50px;height:50px;"/></td>
+        <td><h5>Team bootcamp</h5>
+        <p> Hey! guys, where do we meet</p></td>
+      </tr>
+    </table>  
+<!-- end page content !-->
 </body>
 </html>
