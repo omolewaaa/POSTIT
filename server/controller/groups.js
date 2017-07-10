@@ -48,17 +48,7 @@ exports.add = (req, res) => {
   if(!users){   
  res.status(404).send({status: false, message:'User not found'});
   }
-   /*else{
-    user.findOne({
-    where: {
-      groupname: req.body.groupname,
-    },
-  })
-  .then((user) => {
-    if(!user){
-      res.status(400).send({ status: false, message:'groupname not found'});
-    }
-*/
+
   else {
     
     const Admin = req.decoded.users.username;
@@ -72,8 +62,6 @@ exports.add = (req, res) => {
   .then(groupMembers => res.status(200).send({status: true, message: "User added succefully", data: groupMembers, Admin}));
   }
  }); 
- //} 
-//});
 
 };
 
