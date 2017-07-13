@@ -1,10 +1,27 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-class HelloWorld extends React.Component {
+const React = require('react');
+const ReactDOM = require('react-dom');
+const App = require('./component/App');
+//const ZipForm from './ZipForm';
+/*class HelloWorld extends React.Component {
   render() {
     return (
       <div>Hello World!</div>
     )
   }
 }
-ReactDOM.render(<HelloWorld />, document.getElementById('root'));
+*/
+ReactDOM.render(
+    <App />,
+	document.getElementById('root'),
+
+	class aapp extends React.Component {
+  render() {
+    return (
+      <div className='app'>
+        <App />
+      </div>
+    );
+  }
+},
+	);
+export default aapp;
