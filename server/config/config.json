@@ -8,7 +8,7 @@
     "port": 5432,
     "dialect": "postgres"
   },
-  "test": {
+  /*"test": {
     "username": "postgres",
     "password": "omolewa1993",
     "database": "post_it",
@@ -16,6 +16,7 @@
     "port": 5432,
     "dialect": "postgres"
   },
+  */
   "production": {
     "username": "qeundioe",
     "password": "oKUDgAJCVsC2OOisI_1hTcHcsbwuOKf5",
